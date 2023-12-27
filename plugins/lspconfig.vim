@@ -31,4 +31,6 @@ vim.api.nvim_create_autocmd('LspAttach', {
 EOF
 
 hi SignColumn ctermbg=NONE
+
 set signcolumn=yes
+set completeopt-=preview
