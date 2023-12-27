@@ -11,6 +11,8 @@ set ttimeoutlen=0
 set completeopt=menuone,preview
 set guicursor=n-v-c-i:block
 
+colorscheme wildcharm
+
 set grepprg=grep\ -Rin\ $*
 
 command! -nargs=1 GREP silent grep! <args> | cw
