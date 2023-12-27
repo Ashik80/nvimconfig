@@ -32,3 +32,5 @@ nmap <leader>fg :GREP<space>
 nmap <leader>n :noh<CR>
 vmap > >gv
 vmap < <gv
+
+runtime! plugins/plugins.vim
