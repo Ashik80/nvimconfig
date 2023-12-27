@@ -13,7 +13,7 @@ set guicursor=n-v-c-i:block
 
 colorscheme wildcharm
 
-set grepprg=grep\ -Rin\ $*
+set grepprg=grep\ -Rin\ --exclude-dir={__pycache__,node_modules,.git}\ $*
 
 command! -nargs=1 GREP silent grep! <args> | cw
 command! ListFiles norm i!!find .
