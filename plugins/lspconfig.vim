@@ -6,6 +6,7 @@ local servers = {
     'tsserver',
     'eslint',
     'pylsp',
+    'gopls',
     'rust_analyzer'
 }
 
