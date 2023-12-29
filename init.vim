@@ -27,6 +27,7 @@ nmap <leader>yf :let @f = expand("%")<CR>
 vmap <leader>y "+y
 nmap <leader>cp "+p
 nmap <leader>fl :ListFiles<CR>
+nmap <leader>fb :ls<CR>:b<space>
 nmap <leader>fg :GREP<space>
 nmap <leader>n :noh<CR>
 vmap > >gv
