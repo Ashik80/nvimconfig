@@ -23,6 +23,21 @@ function! GitBlameNextTwentyLines()
     execute '!git blame -L ' . l:linenumber . ',+20 %'
 endfunction
 
+if executable("fzf")
+    function! OpenFile(job_id, data, event)
+        execute 'bdelete!'
+        execute 'cfile ~/temp'
+    endfunction
+    function! FindFiles()
+        let l:command = 'find . -type d \( -name __pycache__ -o -name node_modules -o -name .git -o -name dist \)
+                    \ -prune -o -type f -print | fzf | sed ''s/$/:1:0/'' > ~/temp'
+        execute 'bel new'
+        call termopen(l:command, {'on_exit': 'OpenFile'})
+        execute 'startinsert'
+    endfunction
+    nmap <leader>ff :call FindFiles()<CR>
+endif
+
 nmap <leader>yf :let @f = expand("%")<CR>
 vmap <leader>y "+y
 nmap <leader>cp "+p
