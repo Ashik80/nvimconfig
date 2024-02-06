@@ -11,8 +11,6 @@ set ttimeoutlen=0
 set completeopt=menuone,preview
 set guicursor=n-v-c-i:block
 
-colorscheme jellybeans
-
 set grepprg=grep\ -Rin\ --exclude-dir={__pycache__,node_modules,.git,dist}\ $*
 
 command! -nargs=1 GREP silent grep! <args> | cw
@@ -35,3 +33,11 @@ nmap <leader>gb :call GitBlameNextTwentyLines()<CR>
 nmap <leader>n :noh<CR>
 vmap > >gv
 vmap < <gv
+
+runtime! plugins/plugins.vim
+
+if has('termguicolors')
+    set termguicolors
+endif
+
+colorscheme jellybeans-nvim
