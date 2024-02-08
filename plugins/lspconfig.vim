@@ -37,3 +37,4 @@ hi SignColumn ctermbg=NONE
 
 set signcolumn=yes
 set completeopt-=preview
+nmap <leader>lx :LspRestart<CR>
