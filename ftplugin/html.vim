@@ -1,3 +1,6 @@
+set tabstop=4
+set shiftwidth=4
+
 nmap <leader>html :-1r $HOME/.config/nvim/snippets/html.html<CR>Gdd2k$
 nmap <leader>div :norm a<div></div>F<
 nmap <leader>but :norm a<button type=""></button>F<
