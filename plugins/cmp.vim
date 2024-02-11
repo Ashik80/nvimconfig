@@ -1,5 +1,6 @@
 lua << EOF
 local cmp = require('cmp')
+local luasnip = require('luasnip')
 
 local source_names = {
     buffer = "[Buffer]",
@@ -19,8 +20,14 @@ cmp.setup {
             return vim_item
         end
     },
+    snippet = {
+        expand = function(args)
+            luasnip.lsp_expand(args.body)
+        end,
+    },
     sources = cmp.config.sources({
         { name = 'nvim_lsp' },
+        { name = 'luasnip' },
         {
             name = 'buffer',
             option = {

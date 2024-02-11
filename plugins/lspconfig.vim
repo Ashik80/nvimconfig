@@ -7,7 +7,8 @@ local servers = {
     'tsserver',
     'eslint',
     'pylsp',
-    'rust_analyzer'
+    'rust_analyzer',
+    'gopls',
 }
 
 for _, server in ipairs(servers) do
