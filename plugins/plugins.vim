@@ -8,6 +8,7 @@ Plug 'hrsh7th/cmp-buffer'
 Plug 'nvim-treesitter/nvim-treesitter'
 Plug 'saadparwaiz1/cmp_luasnip'
 Plug 'L3MON4D3/LuaSnip'
+Plug 'ap/vim-css-color'
 " colorscheme
 Plug 'rktjmp/lush.nvim'
 Plug 'metalelf0/jellybeans-nvim'
