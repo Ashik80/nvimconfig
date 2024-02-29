@@ -9,6 +9,7 @@ local servers = {
     'pylsp',
     'rust_analyzer',
     'gopls',
+    'csharp_ls',
 }
 
 for _, server in ipairs(servers) do
