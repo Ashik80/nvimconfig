@@ -38,7 +38,7 @@ if executable("fzf")
     nmap <leader>ff :call FindFiles()<CR>
 endif
 
-nmap <leader>yf :let @f = expand("%")<CR>
+nmap <leader>yf :let @f = expand("%:.")<CR>
 vmap <leader>y "+y
 nmap <leader>cp "+p
 vmap <leader>cp "+p
