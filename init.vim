@@ -29,7 +29,11 @@ if executable("fzf")
         execute 'cfile ~/temp'
     endfunction
     function! FindFiles()
-        let l:command = 'find . -type d \( -name __pycache__ -o -name node_modules -o -name .git -o -name dist \)
+        let l:command = 'find . -type d \( -name __pycache__
+                    \ -o -name node_modules
+                    \ -o -name .git
+                    \ -o -name dist
+                    \ -o -name target \)
                     \ -prune -o -type f -print | fzf | sed ''s/$/:1:0/'' > ~/temp'
         execute 'bel new'
         call termopen(l:command, {'on_exit': 'OpenFile'})
