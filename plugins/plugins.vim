@@ -2,9 +2,9 @@ call plug#begin()
 
 Plug 'rktjmp/lush.nvim'
 Plug 'metalelf0/jellybeans-nvim'
+Plug 'ellisonleao/gruvbox.nvim'
 
 call plug#end()
 
-runtime! plugins/lspconfig.vim
-runtime! plugins/mason.vim
-runtime! plugins/cmp.vim
+" runtime! plugins/jellybeans.vim
+runtime! plugins/gruvbox.vim

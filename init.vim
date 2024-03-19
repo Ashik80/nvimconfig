@@ -54,10 +54,8 @@ nmap <leader>n :noh<CR>
 vmap > >gv
 vmap < <gv
 
-runtime! plugins/plugins.vim
-
 if has('termguicolors')
     set termguicolors
 endif
 
-colorscheme jellybeans-nvim
+runtime! plugins/plugins.vim
