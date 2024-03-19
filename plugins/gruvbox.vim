@@ -1,3 +1,9 @@
+lua << EOF
+require("gruvbox").setup({
+    contrast = "hard"
+})
+EOF
+
 colorscheme gruvbox
 
 hi link Function GruvboxYellow
