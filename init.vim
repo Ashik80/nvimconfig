@@ -10,6 +10,7 @@ set noswapfile
 set ttimeoutlen=0
 set completeopt=menuone,preview
 set guicursor=n-v-c-i:block
+set wildignorecase
 
 set grepprg=grep\ -Rin\ --exclude-dir={__pycache__,node_modules,.git,dist}\ $*
 
